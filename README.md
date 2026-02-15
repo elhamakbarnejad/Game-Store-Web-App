@@ -1,5 +1,8 @@
 🔵Game Store Web App🔵
 
+⚠️ Important Note
+To view the site information and images, you need VPN connection.
+
 A responsive game listing web application built with React.
 Users can browse games, filter by genre, and view detailed information about each title.
 

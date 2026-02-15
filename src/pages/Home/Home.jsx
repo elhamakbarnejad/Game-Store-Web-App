@@ -3,7 +3,6 @@ import { useOutletContext } from "react-router";
 
 const Home = () => {
   const { games, filteredGames } = useOutletContext();
-  console.log(games);
   if (!games) {
     return <Loader />;
   }
@@ -13,8 +12,8 @@ const Home = () => {
 
       <div className="relative z-10 text-white p-6 w-full  flex items-center justify-center">
         {" "}
-        <div className="w-[65%]  min-h-screen grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-4 justify-items-center mx-auto">
-          {filteredGames.slice(0, 99).map((game) => {
+        <div className="w-[70%]  min-h-screen grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-4 justify-items-center mx-auto">
+          {filteredGames.map((game) => {
             return <GameCard key={game.id} data={game} />;
           })}
         </div>
