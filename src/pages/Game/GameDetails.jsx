@@ -1,9 +1,9 @@
 import { useOutletContext, useParams } from "react-router";
-import Loader from "../../components/Loader/Loader";
 import { TiPlus } from "react-icons/ti";
 import { FaRegComment } from "react-icons/fa";
 import { BiEdit } from "react-icons/bi";
 import { FaArrowTurnUp } from "react-icons/fa6";
+import Loader from "../../components/Loader/Loader";
 
 const GameDetails = () => {
   const { games } = useOutletContext();
@@ -30,7 +30,7 @@ const GameDetails = () => {
       <div className="absolute inset-0 bg-black/90"></div>
 
       <div className="relative z-10 text-white p-6 w-full flex items-stretch justify-center border-2 border-amber-500">
-        <div className="flex flex-col lg:flex-row items-stretch justify-center w-full max-w-7xl mx-auto min-h-screen gap-8 px-4 border-2 border-amber-500">
+        <div className="flex flex-col lg:flex-row items-stretch justify-center w-full max-w-7xl mx-auto min-h-screen gap-8 px-4 shadow shadow-amber-500 rounded-4xl">
           <div className="w-full p-5 flex flex-col items-start justify-between gap-5">
             <h1 className="text-7xl font-bold text-amber-200">
               {mainGame.name}

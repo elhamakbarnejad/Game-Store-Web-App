@@ -1,8 +1,8 @@
+import { Link } from "react-router";
 import { HiMiniMagnifyingGlass } from "react-icons/hi2";
 import { GoGift } from "react-icons/go";
 import { IoLibraryOutline } from "react-icons/io5";
 import { GiAbstract088 } from "react-icons/gi";
-import { Link } from "react-router";
 
 const Topbar = ({ setFilter, nameGenres }) => {
   return (
